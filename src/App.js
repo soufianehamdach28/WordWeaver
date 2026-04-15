@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
@@ -47,6 +48,7 @@ function App() {
         </Routes>
       </main>
       <Footer mode={mode} />
+      <Analytics />
     </>
   );
 }
